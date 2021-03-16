@@ -1,0 +1,21 @@
+:root {
+    --color-blue-primary: #2F76B0;
+    --color-blue-secondary: #E4F3FF;
+    --color-blue-tertiary: #F7FBFF;
+    --color-orange-highlight: #F1A15B;
+    --color-purple-primary: #434198;
+    --color-purple-secondary: #F7F7FF;
+    --color-gray-primary: #878787;
+    --color-gray-secondary: #C4C4C4;
+    --color-gray-tertiary: #EDEDED;
+    --box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
+    --border-radius-big: 10px;
+    --border-radius-small: 5px;
+
+}
+
+body {
+    background-color: var(--color-blue-secondary);
+    color: var(--color-blue-primary);
+}
+
