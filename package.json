@@ -1,0 +1,16 @@
+{
+  "name": "medplanner",
+  "version": "1.0.0",
+  "description": "MedPlanner is a web app for private and public health doctors to manage patient profiles, lab test results and appointments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "valentina bedi",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
