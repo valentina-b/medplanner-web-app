@@ -55,6 +55,23 @@ h1 ~ .border-decoration {
           box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
 }
 
+.text-gray, .regular-prio {
+  color: #C4C4C4;
+}
+
+.medium-prio {
+  color: #434198;
+}
+
+.high-prio {
+  color: #F1A15B;
+}
+
+.regular-prio, .medium-prio, .high-prio {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
 .logo-div {
   background-color: #E4F3FF;
   height: 65px;
@@ -181,5 +198,39 @@ main {
   -webkit-box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
           box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-div .main-div-content .timeframe-div .appointment-div .appointment-div-content {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.main-div .main-div-content .timeframe-div .appointment-div .appointment-div-content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 /*# sourceMappingURL=style.css.map */

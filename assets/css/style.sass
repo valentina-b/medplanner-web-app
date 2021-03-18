@@ -70,7 +70,22 @@ h2
     border-radius: $border-radius-big
     box-shadow: $box-shadow
 
+.text-gray, .regular-prio
+    color: $color-gray-secondary
 
+
+.medium-prio
+    color: $color-purple-primary
+
+
+.high-prio
+    color: $color-orange-highlight
+
+
+.regular-prio, .medium-prio, .high-prio
+    text-transform: uppercase
+    font-size: 14px
+    
 .logo-div 
     background-color: $color-blue-secondary
     height: 65px
@@ -155,3 +170,17 @@ main
                 border-radius: $border-radius-big
                 box-shadow: $box-shadow
                 margin-bottom: 20px
+                display: flex
+                align-items: center
+
+                .appointment-div-content
+                    padding: 0 20px
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    width: 100%
+
+                    div
+                        display: flex
+                        flex-direction: row
+                        align-items: baseline
