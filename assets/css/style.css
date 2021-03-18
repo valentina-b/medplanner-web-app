@@ -20,6 +20,7 @@
 
 html {
     height: 100vh;
+    overflow-y: hidden;
 }
 
 body {
@@ -28,12 +29,41 @@ body {
     font-family: var(--font-family-raleway);
 }
 
-h1 {
-    font-size: 25px;
+h1, h2 {
     text-transform: uppercase;
     font-family: var(--font-family-montserrat);
-    z-index: 999999;
 }
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset var(--box-shadow); 
+    border-radius: var(--border-radius-big);
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue-secondary); 
+    border-radius: var(--border-radius-big);
+    box-shadow: var(--box-shadow);
+}
+  
+  /* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-blue-secondary); 
+} */
 
 .border-decoration {
     background-color: var(--color-blue-secondary);
@@ -50,8 +80,6 @@ h1 ~ .border-decoration {
     background-color: var(--color-blue-secondary);
     height: 65px;
     width: 180px;
-    box-shadow: var(--box-shadow);
-    float: left;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +88,11 @@ h1 ~ .border-decoration {
 .logo-p {
     font-size: 10px;
     font-family: var(--font-family-montserrat);
+}
+
+.logo-img {
+    height: 20px;
+    margin-bottom: 3px;
 }
 
 .logo-div-content {
@@ -78,4 +111,62 @@ h1 ~ .border-decoration {
 
 .background-top-content {
     padding: 0 35px;
+}
+
+#menu {
+    width: 180px;
+    height: 100vh;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    float: left;
+}
+
+main {
+    /* remove sidebar */
+    width: calc(100vw - 180px);
+    /* remove top */
+    height: calc(100vh - 65px);
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-div {
+    background-color: var(--color-white);
+    width: 95%;
+    height: 95%;
+    border-radius: var(--border-radius-big);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div-content {
+    width: calc(95% - 10px);
+    height: calc(95% - 20px);
+    overflow-y: auto;
+}
+
+.timeframe-div {
+    margin-bottom: 35px;
+    width: calc(98% - 10px);
+}
+
+.timeframe-div h2 {
+    margin-bottom: 25px;
+}
+
+.main-div-content > .timeframe-div:last-child {
+    margin-bottom: 0;   
+}
+
+.appointment-div {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-blue-tertiary);
+    border-radius: var(--border-radius-big);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
 }

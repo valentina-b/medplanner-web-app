@@ -6,6 +6,6 @@
 <rect width="7.92868" height="1.18066" rx="0.590332" transform="matrix(0.526156 0.850388 0.844131 -0.536136 26.5361 17.1348)" fill="#2F76B0"/>
 <rect x="30.4054" y="22.4746" width="5.88136" height="1.19177" rx="0.595884" fill="#2F76B0"/>
 <path d="M37.4568 22.7322L37.8988 15.0425L44.3405 19.2766L37.4568 22.7322Z" stroke="#2F76B0" stroke-width="1.18881" stroke-linecap="round" stroke-linejoin="round"/>
-<rect width="1.93253" height="1.4884" transform="matrix(-0.829291 -0.558817 0.559583 -0.828774 38.7147 22.4258)" fill="#2F76B0"/>
+<path d="M38.7147 22.4267L37.112 21.3467L37.5 19L40.5 21.0007L38.7147 22.4267Z" fill="#2F76B0"/>
 <rect x="44.3615" y="19.2627" width="7.72608" height="16.96" transform="rotate(-146.684 44.3615 19.2627)" stroke="#2F76B0" stroke-width="1.18881" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
