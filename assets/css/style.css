@@ -136,6 +136,83 @@ h1 ~ .border-decoration {
   float: left;
 }
 
+.menu-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-div .menu-div-content {
+  margin-top: 50px;
+  max-width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-div .menu-div-content .menu-div-content-doctor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.menu-div .menu-div-content .menu-div-content-doctor .profile-picture {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.menu-div .menu-div-content .menu-div-content-doctor p {
+  font-size: 14px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.menu-div .menu-div-content .menu-div-content-doctor p ~ .border-decoration {
+  margin-top: -7px;
+}
+
+.navlink-group {
+  margin-bottom: 30px;
+}
+
+.navlink-group img {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
+
+.navlink {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2F76B0;
+  font-size: 14px;
+}
+
+.navlink:hover {
+  text-decoration: underline;
+}
+
+.navlink div:first-child {
+  display: inline-block;
+}
+
 main {
   /* remove sidebar */
   width: calc(100vw - 180px);

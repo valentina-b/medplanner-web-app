@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap')
 
 
 $color-blue-primary: #2F76B0
@@ -125,6 +125,59 @@ h2
     background-color: $color-white
     box-shadow: $box-shadow
     float: left
+
+
+.menu-div
+    display: flex
+    justify-content: center
+
+    .menu-div-content
+        margin-top: 50px
+        max-width: 150px
+        display: flex
+        flex-direction: column
+
+        .menu-div-content-doctor
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 50px
+
+            .profile-picture
+                border-radius: 50%
+                width: 30px
+                height: 30px
+                margin-bottom: 20px
+
+            p
+                font-size: 14px
+                text-transform: uppercase
+                z-index: 1
+            
+                & ~ .border-decoration
+                    margin-top: -7px 
+
+
+.navlink-group
+    margin-bottom: 30px
+
+    img
+        width: 12px
+        height: 12px
+        margin-right: 8px
+
+.navlink
+    text-transform: uppercase
+    text-decoration: none
+    color: $color-blue-primary
+    font-size: 14px
+
+    &:hover
+        text-decoration: underline
+    
+    div:first-child
+        display: inline-block
+
 
 
 main 
