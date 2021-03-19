@@ -7,6 +7,7 @@ MedPlanner is a web app for private and public health doctors to manage patient 
 
 1. HTML
 1. CSS
+1. SASS
 1. JavaScript
 1. Node.js
 1. Express
