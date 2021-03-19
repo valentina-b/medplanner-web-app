@@ -288,26 +288,20 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
 }
 
-.main-div .main-div-content .timeframe-div .appointment-div .appointment-div-content div {
+.main-div .main-div-content .timeframe-div .appointment-div .appointment-div-content .appointment-div-content-patient {
+  width: 37%;
+}
+
+.main-div .main-div-content .timeframe-div .appointment-div .appointment-div-content .appointment-div-content-appointment-topic-time {
+  width: 63%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
