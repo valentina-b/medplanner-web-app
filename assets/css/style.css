@@ -55,6 +55,47 @@ h1 ~ .border-decoration {
           box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
 }
 
+.btn-primary {
+  background-color: #F1A15B;
+  color: #FFFFFF;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 8px 15px;
+  border: 1px solid #F1A15B;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s, border 0.5s, color 0.5s;
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+  -webkit-box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
+          box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
+}
+
+.btn-primary:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #2F76B0;
+  color: #2F76B0;
+}
+
+select {
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  color: #2F76B0;
+  font-size: 12px;
+  padding: 8px 30px 8px 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
+          box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
+  text-transform: uppercase;
+  outline: transparent;
+  /* remove dropdown arrow */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../images/icons/elements-icons/img-icon-dropdown-arrow.svg) no-repeat right;
+  background-position-x: 93%;
+  outline: transparent;
+}
+
 .text-gray, .regular-prio {
   color: #C4C4C4;
 }
@@ -124,7 +165,21 @@ h1 ~ .border-decoration {
 }
 
 .background-top .background-top-content {
+  width: 100%;
   padding: 0 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.background-top .btn-primary {
+  margin-left: 20px;
 }
 
 #menu {

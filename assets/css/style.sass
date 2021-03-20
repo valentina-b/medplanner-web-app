@@ -70,6 +70,44 @@ h2
     border-radius: $border-radius-big
     box-shadow: $box-shadow
 
+
+.btn-primary
+    background-color: $color-orange-highlight
+    color: $color-white
+    font-size: 12px
+    text-transform: uppercase
+    border-radius: $border-radius-small
+    padding: 8px 15px
+    border: 1px solid $color-orange-highlight
+    text-decoration: none
+    transition: background-color 0.5s, border 0.5s, color 0.5s
+    box-shadow: $box-shadow
+
+    &:hover
+        background-color: $color-white
+        border: 1px solid $color-blue-primary
+        color: $color-blue-primary
+
+
+select
+    background-color: $color-white
+    border: 1px solid $color-gray-tertiary
+    color: $color-blue-primary
+    font-size: 12px
+    padding: 8px 30px 8px 15px
+    border-radius: $border-radius-small
+    box-shadow: $box-shadow
+    text-transform: uppercase
+    outline: transparent
+
+    /* remove dropdown arrow */
+    appearance: none
+    background: url(../images/icons/elements-icons/img-icon-dropdown-arrow.svg) no-repeat right
+    background-position-x: 93%
+
+    outline: transparent
+
+
 .text-gray, .regular-prio
     color: $color-gray-secondary
 
@@ -116,7 +154,14 @@ h2
     align-items: center
 
     .background-top-content 
+        width: 100%
         padding: 0 35px
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    .btn-primary
+        margin-left: 20px
 
 
 #menu 
@@ -182,9 +227,6 @@ h2
     
     .border-decoration-hovered
         width: 35px
-
-
-
 
 
 main 
