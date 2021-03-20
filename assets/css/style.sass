@@ -131,6 +131,9 @@ h2
     display: flex
     justify-content: center
 
+    .border-decoration
+        margin-top: -7px 
+
     .menu-div-content
         margin-top: 50px
         max-width: 150px
@@ -153,9 +156,6 @@ h2
                 font-size: 14px
                 text-transform: uppercase
                 z-index: 1
-            
-                & ~ .border-decoration
-                    margin-top: -7px 
 
 
 .navlink-group
@@ -166,17 +166,24 @@ h2
         height: 12px
         margin-right: 8px
 
+
 .navlink
     text-transform: uppercase
     text-decoration: none
     color: $color-blue-primary
     font-size: 14px
 
-    &:hover
-        text-decoration: underline
-    
-    div:first-child
+    div:first-child, .navlink-div
         display: inline-block
+
+    .border-decoration
+        width: 0
+        transition: width 0.5s
+    
+    .border-decoration-hovered
+        width: 35px
+
+
 
 
 

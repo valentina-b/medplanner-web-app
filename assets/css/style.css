@@ -145,6 +145,10 @@ h1 ~ .border-decoration {
           justify-content: center;
 }
 
+.menu-div .border-decoration {
+  margin-top: -7px;
+}
+
 .menu-div .menu-div-content {
   margin-top: 50px;
   max-width: 150px;
@@ -184,10 +188,6 @@ h1 ~ .border-decoration {
   z-index: 1;
 }
 
-.menu-div .menu-div-content .menu-div-content-doctor p ~ .border-decoration {
-  margin-top: -7px;
-}
-
 .navlink-group {
   margin-bottom: 30px;
 }
@@ -205,12 +205,18 @@ h1 ~ .border-decoration {
   font-size: 14px;
 }
 
-.navlink:hover {
-  text-decoration: underline;
+.navlink div:first-child, .navlink .navlink-div {
+  display: inline-block;
 }
 
-.navlink div:first-child {
-  display: inline-block;
+.navlink .border-decoration {
+  width: 0;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.navlink .border-decoration-hovered {
+  width: 35px;
 }
 
 main {
