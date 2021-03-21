@@ -127,6 +127,8 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
 .logo-div .logo-div-content {
@@ -183,16 +185,18 @@ select {
   margin-left: 20px;
 }
 
-#menu {
+.menu {
   width: 180px;
   height: 100vh;
   background-color: #FFFFFF;
   -webkit-box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
           box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
   float: left;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 
-#menu .menu-show-hide-div {
+.menu .menu-show-hide-div {
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -206,18 +210,22 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 80px;
+  margin-top: 120px;
   position: relative;
   left: 14px;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
-#menu .menu-show-hide-div img {
+.menu .menu-show-hide-div img {
   width: 6px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
-#menu .menu-show-hide-div:hover {
+.menu .menu-show-hide-div:hover {
   background-color: #E4F3FF;
   cursor: pointer;
 }
@@ -229,10 +237,6 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.menu-div .border-decoration {
-  margin-top: -7px;
 }
 
 .menu-div .menu-div-content {
@@ -247,6 +251,10 @@ select {
           flex-direction: column;
 }
 
+.menu-div .menu-div-content .menu-div-content-navlinks {
+  height: 265px;
+}
+
 .menu-div .menu-div-content .menu-div-content-doctor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,6 +267,7 @@ select {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .menu-div .menu-div-content .menu-div-content-doctor .profile-picture {
@@ -268,20 +277,48 @@ select {
   margin-bottom: 20px;
 }
 
-.menu-div .menu-div-content .menu-div-content-doctor p {
+.menu-div-content-collapsed {
+  width: 80px;
+}
+
+.doctor-name {
+  width: 100%;
+}
+
+.doctor-name-p {
   font-size: 14px;
   text-transform: uppercase;
-  z-index: 1;
+  text-align: center;
+  width: 100%;
+  overflow-wrap: break-word;
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+}
+
+.doctor-name-p-collapsed {
+  font-size: 12px;
 }
 
 .navlink-group {
   margin-bottom: 30px;
 }
 
-.navlink-group .navlink-icon {
+.navlink-group-collapsed {
+  margin-left: 36.5%;
+}
+
+.navlink-icon {
   width: 12px;
   height: 12px;
   margin-right: 8px;
+  -webkit-transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s;
+}
+
+.navlink-icon-collapsed {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 .navlink {
@@ -291,12 +328,13 @@ select {
   font-size: 14px;
 }
 
-.navlink div:first-child, .navlink .navlink-div {
+.navlink div:first-child {
   display: inline-block;
 }
 
 .navlink .border-decoration {
   width: 0;
+  margin-top: -7px;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
@@ -335,6 +373,23 @@ select {
   top: 1.5px;
 }
 
+.navlink-div {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+.menu-hide {
+  width: 100px;
+}
+
+.rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 main {
   /* remove sidebar */
   width: calc(100vw - 180px);
@@ -350,6 +405,12 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.main-collapsed {
+  width: calc(100vw - 100px);
 }
 
 .main-div {

@@ -19,6 +19,8 @@ $border-radius-small: 5px
 $font-family-montserrat: 'Montserrat', sans-serif
 $font-family-raleway: 'Raleway', sans-serif
 $font-family-roboto: 'Roboto', sans-serif
+$short-transition: 0.5s
+$double-transition: 1s
 
 
 html 
@@ -82,7 +84,7 @@ h2
     padding: 8px 15px
     border: 1px solid $color-orange-highlight
     text-decoration: none
-    transition: background-color 0.5s, border 0.5s, color 0.5s
+    transition: background-color $short-transition, border $short-transition, color $short-transition
     box-shadow: $box-shadow
 
     &:hover
@@ -134,6 +136,7 @@ select
     display: flex
     align-items: center
     justify-content: center
+    transition: width $short-transition
 
     .logo-div-content 
         display: flex
@@ -167,12 +170,13 @@ select
         margin-left: 20px
 
 
-#menu 
+.menu 
     width: 180px
     height: 100vh
     background-color: $color-white
     box-shadow: $box-shadow
     float: left
+    transition: width $short-transition
 
     .menu-show-hide-div
         border-radius: 50%
@@ -183,13 +187,14 @@ select
         float: right
         display: flex
         justify-content: center
-        margin-top: 80px
+        margin-top: 120px
         position: relative
         left: 14px
-        transition: background-color 0.5s
+        transition: background-color $short-transition
 
         img
             width: 6px
+            transition: transform $double-transition
 
         &:hover
             background-color: $color-blue-secondary
@@ -200,20 +205,21 @@ select
     display: flex
     justify-content: center
 
-    .border-decoration
-        margin-top: -7px 
-
     .menu-div-content
         margin-top: 50px
         max-width: 150px
         display: flex
         flex-direction: column
 
+        .menu-div-content-navlinks
+            height: 265px
+
         .menu-div-content-doctor
             display: flex
             flex-direction: column
             align-items: center
             margin-bottom: 50px
+            width: 100%
 
             .profile-picture
                 border-radius: 50%
@@ -221,19 +227,45 @@ select
                 height: 30px
                 margin-bottom: 20px
 
-            p
-                font-size: 14px
-                text-transform: uppercase
-                z-index: 1
+
+.menu-div-content-collapsed
+    width: 80px
+
+
+.doctor-name
+    width: 100%
+
+.doctor-name-p
+    font-size: 14px
+    text-transform: uppercase
+    text-align: center
+    width: 100%
+    overflow-wrap: break-word
+    transition: font-size $short-transition
+
+.doctor-name-p-collapsed
+    font-size: 12px
 
 
 .navlink-group
     margin-bottom: 30px
 
-    .navlink-icon
-        width: 12px
-        height: 12px
-        margin-right: 8px
+
+.navlink-group-collapsed
+    margin-left: 36.5%
+
+
+.navlink-icon
+    width: 12px
+    height: 12px
+    margin-right: 8px
+    transition: width $short-transition, height $short-transition
+
+
+.navlink-icon-collapsed
+    width: 20px
+    height: 20px
+    margin-right: 5px
 
 
 .navlink
@@ -242,12 +274,13 @@ select
     color: $color-blue-primary
     font-size: 14px
 
-    div:first-child, .navlink-div
+    div:first-child
         display: inline-block
 
     .border-decoration
         width: 0
-        transition: width 0.5s
+        margin-top: -7px 
+        transition: width $short-transition
     
     .border-decoration-hovered
         width: 35px
@@ -272,7 +305,21 @@ select
                 color: $color-white
                 position: relative
                 top: 1.5px
-                
+
+
+.navlink-div
+    display: inline-block
+
+.hide
+    display: none
+ 
+.menu-hide
+    width: 100px
+
+
+.rotate-180
+    transform: rotate(180deg)
+
 
 main 
     /* remove sidebar */
@@ -283,6 +330,10 @@ main
     display: flex
     align-items: center
     justify-content: center
+    transition: width $short-transition
+
+.main-collapsed
+    width: calc(100vw - 100px)
 
 
 .main-div 
