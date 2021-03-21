@@ -154,6 +154,11 @@ select {
   margin-bottom: 3px;
 }
 
+.logo-link {
+  color: #2F76B0;
+  text-decoration: none;
+}
+
 .background-top {
   background-color: #FFFFFF;
   height: 65px;
