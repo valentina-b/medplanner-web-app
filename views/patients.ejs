@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Patients</title>
+</head>
+
+<body>
+
+    <%- include('includes/navigation-side.ejs') %>
+
+    <header>
+        <section>
+            <div class="background-top">
+                <div class="background-top-content">
+                    <div class="background-top-content-title">
+                        <h1>Patients</h1>
+                        <div class="border-decoration"></div>
+                    </div>
+                    <div class="background-top-content-buttons">
+                        <select name="sort-patients" id="sort-patients">
+                            <option value="all">Sort patients by...</option>
+                            <option value="a-z">A to Z</option>
+                            <option value="z-a">Z to A</option>
+                            <option value="last-visit-desc">recent visit</option>
+                            <option value="last-visit-asc">early visit</option>
+                        </select>
+                        <a href="#" class="btn-primary">+ New patient</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="main-div">
+            <div class="main-div-content">
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

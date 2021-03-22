@@ -20,6 +20,9 @@ app.get('/appointments/new', (req, res) => {
     res.render('appointments-new')
 })
 
+app.get('/patients', (req, res) => {
+    res.render('patients')
+})
 
 
 
