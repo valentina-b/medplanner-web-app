@@ -492,4 +492,20 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.main-div .main-div-content .timeframe-div .appointment-div .appointment-div-content .appointment-div-content-appointment-topic-time .appointment-div-content-appointment-topic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-div .main-div-content .timeframe-div .appointment-div .appointment-div-content .appointment-div-content-appointment-topic-time .appointment-div-content-appointment-topic .patient-details-phone-div {
+  margin-right: 12px;
+}
+
+.email-symbol {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */
