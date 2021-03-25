@@ -4,6 +4,10 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 
+// import models
+const Doctor = require('./models/doctor');
+
+// connect to mongo
 mongoose.connect('mongodb://localhost:27017/medplanner', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("MONGO CONNECTION OPEN!!!")
