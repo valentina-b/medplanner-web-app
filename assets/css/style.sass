@@ -48,6 +48,14 @@ h2, label
     font-weight: 600
 
 
+.link
+    color: $color-orange-highlight
+    font-size: 14px
+    transition: color 0.5s
+
+    &:hover
+        color: $color-blue-primary
+
 ::-webkit-scrollbar 
     width: 10px
 
@@ -417,13 +425,16 @@ main
 
 .main-div-form
     width: 430px
-    height: 410px
+    height: 500px
     background-color: $color-white
     box-shadow: $box-shadow
     border-radius: $border-radius-big
 
     .main-div-form-content
-        padding: 45px
+        padding: 35px
+        display: flex
+        flex-direction: column
+        align-items: center
 
     .form-header-content
         height: 90px
@@ -435,10 +446,14 @@ main
         img
             width: 40px
             height: 40px
+    
+    .login-register-link
+        margin-top: 5px
+
 
     form
         padding-top: 35px
-        height: 200px
+        height: 280px
         width: 100%
         display: flex
         flex-direction: column
@@ -455,14 +470,25 @@ main
             margin-bottom: 10px
 
         input
-            height: 30px
-            width: 100%
-            background-color: $color-blue-secondary
+            height: 40px
+            width: 96%
+            background-color: $color-blue-tertiary
             color: $color-blue-primary
             border-radius: $border-radius-small
             box-shadow: $box-shadow
-            border: none
+            box-sizing: border-box
+            border: 2px solid transparent
+            transition: border-color 0.5s
+
+            &:active, &:focus
+                outline-color: $color-orange-highlight
+
+            &:hover
+                border: 2px solid $color-blue-secondary
+
+            &[type="text"], &[type="password"], &::placeholder
+                padding-left: 10px
 
         button
             align-self: center
-            margin-top: 20px
+            margin-top: 10px
