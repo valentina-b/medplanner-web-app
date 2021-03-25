@@ -6,27 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Log In | MedPlanner</title>
+    <title>Register | MedPlanner</title>
 </head>
 
 <body>
 
-    <header>
-        <section>
-            <div class="background-top background-top-login">
-                <div class="logo-div logo-div-login">
-                    <a href="/" class="logo-link">
-                        <div class="logo-div-content">
-                            <img src="/images/img-logo.svg" class="logo-img" alt="medplanner logo">
-                            <p class="logo-p">MedPlanner</p>
-                        </div>
-                    </a>
-                </div>
-        </section>
-    </header>
+    <%- include('includes/header.ejs') %>
 
     <main class="main-unset">
-        <div class="main-div-form">
+        <div class="main-div-form main-div-form-register">
             <div class="main-div-form-content">
                 <div class="form-header">
                     <div class="form-header-content">
@@ -38,6 +26,14 @@
                     <fieldset>
                         <label for="username">Username</label>
                         <input type="text" id="username">
+                    </fieldset>
+                    <fieldset>
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name">
                     </fieldset>
                     <fieldset>
                         <label for="password">Password</label>

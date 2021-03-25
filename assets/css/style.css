@@ -26,6 +26,10 @@ h2, label {
   font-weight: 600;
 }
 
+label {
+  font-size: 16px;
+}
+
 .link {
   color: #F1A15B;
   font-size: 14px;
@@ -664,5 +668,13 @@ main {
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: 10px;
+}
+
+.main-div-form-register {
+  height: 610px;
+}
+
+.main-div-form-register form {
+  height: 400px;
 }
 /*# sourceMappingURL=style.css.map */
