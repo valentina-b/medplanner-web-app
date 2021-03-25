@@ -22,6 +22,10 @@ app.use(express.static(path.join(__dirname + '/assets')))
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'))
 
+app.get('/login', (req, res) => {
+    res.render('login')
+})
+
 app.get('/', (req, res) => {
     res.redirect('/appointments')
 })

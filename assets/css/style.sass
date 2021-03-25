@@ -29,12 +29,12 @@ html
 
 
 body 
-    background-color: $color-blue-secondary
+    background-color: $color-blue-tertiary
     color: $color-blue-primary
     font-family: $font-family-raleway
 
 
-h1, h2 
+h1, h2, label
     text-transform: uppercase
     font-family: $font-family-montserrat
 
@@ -43,7 +43,7 @@ h1
     font-size: 25px
 
 
-h2 
+h2, label 
     font-size: 20px
     font-weight: 600
 
@@ -398,3 +398,71 @@ main
     font-family: $font-family-montserrat
     font-weight: 600
     font-size: 12px
+
+// LOGIN - REGISTRATION
+.background-top-login
+    background-color: $color-blue-secondary
+    justify-content: center
+
+    .logo-div-login
+        background-color: $color-blue-tertiary
+
+
+
+.main-unset
+    width: 100vw
+    height: calc(100vh - 100px)
+    float: none
+
+
+.main-div-form
+    width: 430px
+    height: 410px
+    background-color: $color-white
+    box-shadow: $box-shadow
+    border-radius: $border-radius-big
+
+    .main-div-form-content
+        padding: 45px
+
+    .form-header-content
+        height: 90px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+
+        img
+            width: 40px
+            height: 40px
+
+    form
+        padding-top: 35px
+        height: 200px
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: flex-start
+
+        fieldset
+            height: 80px
+            width: 100%
+            display: flex
+            flex-direction: column
+
+        label
+            margin-bottom: 10px
+
+        input
+            height: 30px
+            width: 100%
+            background-color: $color-blue-secondary
+            color: $color-blue-primary
+            border-radius: $border-radius-small
+            box-shadow: $box-shadow
+            border: none
+
+        button
+            align-self: center
+            margin-top: 20px
