@@ -8,14 +8,17 @@ const ejsMate = require('ejs-mate');
 const Doctor = require('./models/doctor');
 
 // connect to mongo
-mongoose.connect('mongodb://localhost:27017/medplanner', { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => {
-        console.log("MONGO CONNECTION OPEN!!!")
-    })
-    .catch(err => {
-        console.log("OH NO MONGO CONNECTION ERROR!!!!")
-        console.log(err)
-    })
+mongoose.connect('mongodb://localhost:27017/medplanner', { 
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true
+});
+
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", () => {
+    console.log("Database connected");
+});
 
 app.use(express.static(path.join(__dirname + '/assets')))
 
