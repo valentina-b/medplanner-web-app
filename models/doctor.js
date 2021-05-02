@@ -2,8 +2,10 @@
 const mongoose = require('mongoose');
 // shorten mongoose.Schema to a var
 const Schema = mongoose.Schema
+// require passport-local-mongoose for authentication
+const passportLocalMongoose = require('passport-local-mongoose');
 // create a schema
-const doctorSchema = new Schema({
+const DoctorSchema = new Schema({
     firstName: {
         type: String,
         required: true
@@ -21,8 +23,9 @@ const doctorSchema = new Schema({
         required: true
     },
 
-})
+});
+DoctorSchema.plugin(passportLocalMongoose);
 // compile the model
-const Doctor = mongoose.model('Doctor', doctorSchema);
+const Doctor = mongoose.model('Doctor', DoctorSchema);
 // export the model
 module.exports = Doctor;
