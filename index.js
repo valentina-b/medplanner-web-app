@@ -77,7 +77,9 @@ app.get('/patients', (req, res) => {
     res.render('patients')
 })
 
-
+app.all('*', (req, res, next) => {
+    res.render('404')
+})
 
 app.listen(3000, () => {
     console.log("LISTENING ON PORT 3000")
