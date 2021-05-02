@@ -677,4 +677,31 @@ main {
 .main-div-form-register form {
   height: 400px;
 }
+
+.main-div-404 {
+  height: 200px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
+          box-shadow: 3px 2px 8px rgba(51, 51, 51, 0.05);
+  border-radius: 10px;
+}
+
+.main-div-404 .main-div-404-content {
+  text-align: center;
+  padding: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-div-404 .main-div-404-content h2, .main-div-404 .main-div-404-content p, .main-div-404 .main-div-404-content a {
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */
