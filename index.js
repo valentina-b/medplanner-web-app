@@ -1,8 +1,8 @@
-
 const express = require('express');
 const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
+const ejsMate = require('ejs-mate');
 
 // import models
 const Doctor = require('./models/doctor');
@@ -19,8 +19,9 @@ mongoose.connect('mongodb://localhost:27017/medplanner', { useNewUrlParser: true
 
 app.use(express.static(path.join(__dirname + '/assets')))
 
+app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views'))
+app.set('views', path.join(__dirname, 'views'));
 
 app.get('/login', (req, res) => {
     res.render('login-register/login')
